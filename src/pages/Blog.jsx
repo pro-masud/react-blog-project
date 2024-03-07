@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import blogData from "../faker/blog.js";
 import BlogItem from "../components/BlogItem.jsx";
 
-function Blog() {
+const Blog = () => {
   const { slug } = useParams();
   return (
     <>

@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
-
+import Single from "../pages/Single";
 
 // create a react router 
 const router = createBrowserRouter([
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/blog/:slug",
-        element: <Blog />
+        element: <Single/>
     },
     {
         path: "/contact",

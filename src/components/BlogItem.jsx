@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { createProductSlug } from '../helpers/helper.js';
 
 const BlogItem = ({single}) => {
   return (
@@ -10,7 +12,7 @@ const BlogItem = ({single}) => {
             <div className="col-md-8">
               <h2>{single.title}</h2>
               <p>{single.content}</p>
-              <a className="btn btn-info" href="">Read More</a>
+              <Link className="btn btn-info" to={`/blog/${createProductSlug(single.title)}`}>Read More</Link>
             </div>
         </div> 
     </>
